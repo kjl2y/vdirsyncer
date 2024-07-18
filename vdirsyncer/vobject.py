@@ -94,7 +94,8 @@ class Item:
         #    with a picture, which bloats the status file.
         #
         # 2. The status file would contain really sensitive information.
-        return self.uid or self.hash
+        #return self.uid or self.hash
+        return self.hash or self.uid
 
     @property
     def parsed(self):
